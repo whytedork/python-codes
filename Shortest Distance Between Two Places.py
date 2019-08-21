@@ -1,4 +1,9 @@
 from geopy.distance import geodesic
-newport_ri = (41.49008, -71.312796)
-cleveland_oh = (41.499498, -81.695391)
-print(geodesic(newport_ri, cleveland_oh).km)
+a=eval(input("Enter lattitude of first place : "))
+b=eval(input("Enter longitude of first place : "))
+c=eval(input("Enter lattitude of first place : "))
+d=eval(input("Enter longitude of first place : "))
+place1 = (a,b)
+place2 = (c,d)
+print("The distance between the both places in [km] =",end="")
+print(geodesic(place1,place2).km)
